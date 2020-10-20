@@ -1,0 +1,143 @@
+@font-face{
+  font-family: Digital;
+  src: url(DS-DIGI.TTF);
+}
+
+@font-face{
+  font-family: Saira;
+  src: url(SairaExtraCondensed-Regular.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Saira", sans-serif;
+  letter-spacing: 2px;
+  background-image: url('../data/klar.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.app-wrap{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  align-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+  background-position: center center;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+header input{
+  padding-left: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+  min-height: 35px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px 0px 15px 0px;
+  border-bottom: 4px solid #00e3e2;
+  border-left: 3px solid #01a8a7;
+  color: #313131;
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+header input:focus{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+main{
+  flex: 1 1 100%;
+  padding: 10px 25px 50px 25px;
+  margin: 0vh 35vw 5vh 35vw;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 30px 30px 30px 30px;
+}
+
+.content{
+  margin-top: 10px;
+}
+
+.location .city{
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 5px;
+  line-height: 82%;
+  /*text-decoration: underline;
+  text-decoration-skip-ink: none;*/
+  text-shadow: 2px 2px 3px black;
+  border-bottom: 2px white;
+}
+
+.location .date{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  text-shadow: 1px 1px 2px black;
+}
+
+.current .temp{
+  color: white;
+  font-size: 120px;
+  font-weight: 900;
+  margin: 0px 0px;
+  text-shadow: 4px 7px 4px rgba(0, 0, 0, 0.5)
+}
+
+.current .temp span{
+  font-weight: 300;
+  text-shadow: 4px 7px 4px rgba(0, 0, 0, 0.5)
+}
+
+.current .weather{
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.current .high-low{
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.time{
+  text-align: center;
+  letter-spacing: normal;
+  font-family: "Digital";
+  font-size: 70px;
+  color: white;
+  margin-top: 4vh;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 100px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
