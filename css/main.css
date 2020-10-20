@@ -76,6 +76,12 @@ main{
   border-radius: 30px 30px 30px 30px;
 }
 
+@media screen and (max-width: 800px){
+  main{
+    width: 60%;
+  }
+}
+
 .content{
   margin-top: 10px;
 }
